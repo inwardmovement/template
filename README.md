@@ -9,23 +9,7 @@ npm run dev
 2. `cc` (createConfig)
 3. `scni` (initShadcnui)
 4. remove `lucide-react`
-5. replace colors:
-   ```
-   const colors = require("tailwindcss/colors")
-   ...
-   theme: {
-     colors: {
-       transparent: "transparent",
-       current: "currentColor",
-       black: colors.black,
-       white: colors.white,
-       green: colors.emerald,
-       yellow: colors.amber,
-       red: colors.rose,
-     },
-     ...
-   ```
-6. `scna` (addShadcnui)
+5. `scna` (addShadcnui)
 
 To do:
 
