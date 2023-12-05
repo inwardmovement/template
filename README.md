@@ -30,3 +30,4 @@ npm run dev
 To do:
 
 - `<Icon/>` (Material Symbols SVGs)
+- move shadcn dependencies to dev dep?
