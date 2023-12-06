@@ -13,5 +13,7 @@ npm run dev
 
 To do:
 
-- `<Icon/>` (Material Symbols SVGs)
+- remove scn animations
 - move shadcn dependencies to dev dep?
+- scn variantes bouton/badge soft/warning + tabs bs/material
+- `<Icon/>` (Material Symbols font)
