@@ -58,3 +58,4 @@ import "./material-symbols.css"
 ## To do
 
 - `<Icon/>` (Material Symbols font)
+- wait for a native implementation of Material Symbols
