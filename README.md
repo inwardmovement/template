@@ -14,6 +14,5 @@ npm run dev
 To do:
 
 - remove scn animations
-- move shadcn dependencies to dev dep?
-- scn variantes bouton/badge soft/warning + tabs bs/material
+- remove boilerplate code
 - `<Icon/>` (Material Symbols font)
