@@ -1,0 +1,10 @@
+{
+  //  prettier-ignore
+  "Icon": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "icon",
+    "body": [
+      "<Icon name=\"$1\" $2/>$0"
+  ]
+  }
+}
