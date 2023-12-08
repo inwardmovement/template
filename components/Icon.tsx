@@ -1,5 +1,5 @@
-import { cn } from "@/lib/utils"
 import * as React from "react"
+import { twMerge } from "tailwind-merge"
 
 export default function Icon({
   name,
@@ -10,7 +10,10 @@ export default function Icon({
   className?: string
 }) {
   return (
-    <span className={cn("material-symbols-rounded", className)} {...props}>
+    <span
+      className={twMerge("material-symbols-rounded text-red-600", className)}
+      {...props}
+    >
       {name}
     </span>
   )
