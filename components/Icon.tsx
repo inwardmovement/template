@@ -1,4 +1,5 @@
-import React from "react"
+import { cn } from "@/lib/utils"
+import * as React from "react"
 
 export default function Icon({
   name,
@@ -9,7 +10,7 @@ export default function Icon({
   className?: string
 }) {
   return (
-    <span className="material-symbols-rounded text-red-600 hover:text-3xl hover:text-green-600 hover:[--font-FILL:1] hover:[--font-wght:600]">
+    <span className={cn("material-symbols-rounded", className)} {...props}>
       {name}
     </span>
   )
