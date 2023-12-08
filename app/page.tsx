@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main>
       <div>home</div>
-      <Icon name="grade" className="" />
+      <Icon name="grade" />
     </main>
   )
 }
