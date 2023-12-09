@@ -1,5 +1,5 @@
 # To do
 
-- replace tailwind-merge with tailwind-variants ?
-- `<Icon/>` : script array of names https://api.github.com/repos/google/material-design-icons/contents/symbols/web > type in lib/material-symbols.ts
+- `<Icon/>`: maj cc (scripts + script package) + share
+- next-ui: button padding, radius, remove scale animation / checkox quicker animation / tabs no animation / danger rose > red
 - wait for a native implementation of Material Symbols

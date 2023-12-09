@@ -1,8 +1,9 @@
+import { iconNames } from "@/scripts/out/iconNames"
 import React from "react"
 import { twMerge } from "tailwind-merge"
 
 type IconProps = {
-  name: string
+  name: (typeof iconNames)[number]
   className?: string
   [x: string]: any
 }
