@@ -1,4 +1,5 @@
 # To do
 
 - next-ui: button padding, radius / checkbox quicker animation / tabs +variant bs / danger rose > red
-- wait for a native implementation of Material Symbols font
+- wait for [app-level ESM support](https://github.com/vercel/next.js/discussions/59455)
+- wait for a [native implementation of Material Symbols font](https://github.com/vercel/next.js/discussions/42881)
