@@ -1,5 +1,4 @@
 import { iconNames } from "@/scripts/out/iconNames"
-import React from "react"
 import { twMerge } from "tailwind-merge"
 
 type IconProps = {
