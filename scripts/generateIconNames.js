@@ -11,7 +11,9 @@ const generateIconNames = async function () {
   }
 
   const dir = __dirname + "/out"
-  const content = `export const iconNames = ${JSON.stringify(names)} as const`
+  const content = `// prettier-ignore\nexport const iconNames = ${JSON.stringify(
+    names,
+  )} as const`
 
   fs.mkdir(dir, { recursive: true }, (err) => {
     if (err) throw err
