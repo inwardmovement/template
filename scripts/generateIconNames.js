@@ -2,10 +2,10 @@ const fs = require("node:fs")
 const names = []
 
 const generateIconNames = async function () {
-  const response = await fetch(
+  const res = await fetch(
     "https://api.github.com/repos/google/material-design-icons/contents/symbols/web",
   )
-  const data = await response.json()
+  const data = await res.json()
   for (const symbol of data) {
     names.push(symbol.name)
   }
