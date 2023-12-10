@@ -1,8 +1,4 @@
-import { mkdir, writeFile } from "node:fs"
-import { fileURLToPath } from "node:url"
-import path from "node:path"
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url))
+const fs = require("node:fs")
 const names = []
 
 const generateIconNames = async function () {
@@ -14,17 +10,16 @@ const generateIconNames = async function () {
     names.push(symbol.name)
   }
 
-  const dir = __dirname + "\\out"
-  console.log("dir:", dir)
+  const dir = __dirname + "/out"
   const content = `// prettier-ignore\nexport const iconNames = ${JSON.stringify(
     names,
   )} as const\n`
 
-  mkdir(dir, { recursive: true }, (err) => {
+  fs.mkdir(dir, { recursive: true }, (err) => {
     if (err) throw err
   })
 
-  writeFile(dir + "\\iconNames.ts", content, (err) => {
+  fs.writeFile(dir + "/iconNames.ts", content, (err) => {
     if (err) {
       console.error(err)
     } else {
