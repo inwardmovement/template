@@ -1,3 +1,4 @@
+import Icon from "@/components/Icon"
 import { Button } from "@nextui-org/react"
 
 export default function Home() {
@@ -5,7 +6,10 @@ export default function Home() {
     <main>
       <h1>Home</h1>
       <Button>NextUI</Button>
-      <Button className="rounded-md px-3 py-1.5 text-base">Bootstrap</Button>
+      <Button color="primary" className="rounded-md px-3 py-1.5 text-base">
+        <Icon name="add" />
+        Primary
+      </Button>
     </main>
   )
 }
