@@ -2,14 +2,13 @@
 
 :root {
   --font-FILL: 0; /* 0 | 1 */
-  --font-wght: 250; /* 100-700 */
+  --font-wght: 300; /* 100-700 */
   --font-GRAD: 0; /* -25 for light on dark */
   --font-opsz: 24; /* 20 | 24 | 40 | 48 */
 }
 
 .material-symbols-rounded {
-  font-size: 30px;
-  margin-bottom: -0.05em;
+  font-size: 24px;
   font-variation-settings:
     "FILL" var(--font-FILL),
     "wght" var(--font-wght),
