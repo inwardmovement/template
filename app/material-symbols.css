@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
 
 :root {
-  --font-FILL: 0;
-  --font-wght: 400;
-  --font-GRAD: 0;
-  --font-opsz: 24;
+  --font-FILL: 0; /* 0 | 1 */
+  --font-wght: 250; /* 100-700 */
+  --font-GRAD: 0; /* -25 for light on dark */
+  --font-opsz: 24; /* 20 | 24 | 40 | 48 */
 }
 
 .material-symbols-rounded {
-  font-size: 1.4em;
-  margin-bottom: -0.1em;
+  font-size: 30px;
+  margin-bottom: -0.05em;
   font-variation-settings:
     "FILL" var(--font-FILL),
     "wght" var(--font-wght),
