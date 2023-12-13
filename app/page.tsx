@@ -9,7 +9,8 @@ export default function Home() {
         <Button>NextUI</Button>
         <Button
           color="primary"
-          className="gap-0 rounded-none px-3 py-1.5 text-base"
+          className="gap-0 rounded-sm px-3 py-1.5 text-base"
+          disableRipple
         >
           <Icon name="add" className="" textAround />
           Ajouter
