@@ -5,5 +5,5 @@
 
 # Waiting
 
-- wait for [app-level ESM support](https://github.com/vercel/next.js/discussions/59455)
 - wait for a [native implementation of Material Symbols font](https://github.com/vercel/next.js/discussions/42881)
+- wait for [app-level ESM support](https://github.com/vercel/next.js/discussions/59455)
