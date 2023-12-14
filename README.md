@@ -1,6 +1,9 @@
 # To do
 
-- icon: children + preload
-- faire ma propre librairie de composants avec tw ([radix colors](https://github.com/mrcaidev/tailwindcss-radix-colors)) + react-aria + tailwind-variants/clsx/tailwind-merge
+- icon [children](https://stackoverflow.com/questions/77661253/how-to-type-react-children-to-accept-one-string)
+- composants
+
+# Waiting
+
 - wait for [app-level ESM support](https://github.com/vercel/next.js/discussions/59455)
 - wait for a [native implementation of Material Symbols font](https://github.com/vercel/next.js/discussions/42881)
