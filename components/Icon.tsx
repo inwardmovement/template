@@ -3,16 +3,14 @@ import { twMerge } from "tailwind-merge"
 import clsx from "clsx"
 
 type IconProps = {
-  // children: (typeof iconNames)[number]
-  children: string
+  name: (typeof iconNames)[number]
   className?: string
-  textAround?: boolean
 }
 
-export default function Icon({ children, className, textAround }: IconProps) {
+export default function Icon({ name = "add", className }: IconProps) {
   return (
     <span className={twMerge("material-symbols-rounded", className)}>
-      {children}
+      {name}
     </span>
   )
 }

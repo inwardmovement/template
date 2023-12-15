@@ -5,7 +5,7 @@ export default function Home() {
     <main>
       <h1>Home</h1>
       <div className="flex gap-1">
-        <Icon textAround>cancel</Icon>
+        <Icon name="add" />
       </div>
     </main>
   )
