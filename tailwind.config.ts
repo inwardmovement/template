@@ -10,6 +10,12 @@ const config: Config = {
     extend: {},
   },
   darkMode: "class",
-  plugins: [require("tailwindcss-react-aria-components")],
+  plugins: [
+    require("@tailwindcss/forms"),
+    require("tailwindcss-animate"),
+    require("@tailwindcss/container-queries"),
+    require("@tailwindcss/typography"),
+    require("tailwindcss-react-aria-components"),
+  ],
 }
 export default config
