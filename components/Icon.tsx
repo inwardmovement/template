@@ -7,7 +7,7 @@ type IconProps = {
   className?: string
 }
 
-export default function Icon({ name = "add", className }: IconProps) {
+export default function Icon({ name, className }: IconProps) {
   return (
     <span className={twMerge("material-symbols-rounded", className)}>
       {name}

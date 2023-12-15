@@ -8,6 +8,7 @@
 }
 
 .material-symbols-rounded {
+  font-size: 24px;
   font-variation-settings:
     "FILL" var(--font-FILL),
     "wght" var(--font-wght),
