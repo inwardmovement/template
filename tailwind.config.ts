@@ -10,6 +10,6 @@ const config: Config = {
     extend: {},
   },
   darkMode: "class",
-  plugins: [],
+  plugins: [require("tailwindcss-react-aria-components")],
 }
 export default config

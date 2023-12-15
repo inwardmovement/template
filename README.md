@@ -1,7 +1,7 @@
 # To do
 
-- icon [children](https://stackoverflow.com/questions/77661253/how-to-type-react-children-to-accept-one-string)
 - composants
+  - Button accent | danger > Default gris Accent noir Danger rouge
 
 # Waiting
 

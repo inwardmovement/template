@@ -1,6 +1,5 @@
-import { iconNames } from "@/scripts/out/iconNames"
 import { twMerge } from "tailwind-merge"
-import clsx from "clsx"
+import { iconNames } from "@/scripts/out/iconNames"
 
 type IconProps = {
   name: (typeof iconNames)[number]
