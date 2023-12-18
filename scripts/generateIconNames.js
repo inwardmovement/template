@@ -1,4 +1,5 @@
 const fs = require("node:fs")
+const { spawn } = require("node:child_process")
 const names = []
 
 async function generateIconNames() {
@@ -27,6 +28,14 @@ async function generateIconNames() {
   })
 
   fs.writeFile(dir + "/iconNames.ts", diff, (err) => {
+    if (err) {
+      console.error(err)
+    } else {
+      spawn("git", ["diff", ".\\scripts\\out\\iconNames.ts"])
+    }
+  })
+
+  fs.writeFile(dir + "/iconNames.ts", content, (err) => {
     if (err) {
       console.error(err)
     } else {
