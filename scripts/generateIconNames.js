@@ -1,5 +1,4 @@
 const fs = require("node:fs")
-const { spawn } = require("node:child_process")
 const names = []
 
 async function generateIconNames() {
@@ -18,21 +17,8 @@ async function generateIconNames() {
     names,
   )} as const\n`
 
-  const diff = JSON.stringify(names)
-    .replaceAll('",', '",\n')
-    .replace('["', '[\n"')
-    .replace('"]', '"\n]')
-
   fs.mkdir(dir, { recursive: true }, (err) => {
     if (err) throw err
-  })
-
-  fs.writeFile(dir + "/iconNames.ts", diff, (err) => {
-    if (err) {
-      console.error(err)
-    } else {
-      spawn("git", ["diff", ".\\scripts\\out\\iconNames.ts"])
-    }
   })
 
   fs.writeFile(dir + "/iconNames.ts", content, (err) => {
