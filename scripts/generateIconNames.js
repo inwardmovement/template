@@ -12,19 +12,28 @@ async function generateIconNames() {
   }
 
   const dir = __dirname + "/out"
+
   const content = `// prettier-ignore\nexport const iconNames = ${JSON.stringify(
     names,
   )} as const\n`
+
+  const diff = JSON.stringify(names)
+    .replaceAll('",', '",\n')
+    .replace('["', '[\n"')
+    .replace('"]', '"\n]')
 
   fs.mkdir(dir, { recursive: true }, (err) => {
     if (err) throw err
   })
 
-  fs.writeFile(dir + "/iconNames.ts", content, (err) => {
+  fs.writeFile(dir + "/iconNames.ts", diff, (err) => {
     if (err) {
       console.error(err)
     } else {
-      console.log("\x1b[32m%s\x1b[0m", "✔ Icon names generated\n")
+      console.log(
+        "\x1b[32m%s\x1b[0m",
+        `✔ ${names.length} icon names generated\n`,
+      )
     }
   })
 }
