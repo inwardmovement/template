@@ -3,11 +3,12 @@ const names = []
 
 async function generateIconNames() {
   const res = await fetch(
-    "https://api.github.com/repos/google/material-design-icons/contents/symbols/web",
+    "https://raw.githubusercontent.com/google/material-design-icons/master/update/current_versions.json",
   )
   const icons = await res.json()
-  for (const icon of icons) {
-    names.push(icon.name)
+
+  for (const icon in icons) {
+    names.push(icon.replace(/.*::/i, ""))
   }
 
   const dir = __dirname + "/out"
