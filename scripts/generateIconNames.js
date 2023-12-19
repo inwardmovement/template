@@ -1,5 +1,7 @@
+// generate ./out/iconNames.ts
+
 const fs = require("node:fs")
-const names = []
+let names = []
 
 async function generateIconNames() {
   const res = await fetch(
@@ -10,6 +12,8 @@ async function generateIconNames() {
   for (const icon in icons) {
     names.push(icon.replace(/.*::/i, ""))
   }
+
+  names = Array.from(new Set(names.sort())) // remove duplicates + sort
 
   const dir = __dirname + "/out"
 
