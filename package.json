@@ -6,7 +6,8 @@
     "lint": "next lint",
     "format:check": "prettier --check .",
     "format:write": "prettier --write .",
-    "generateIconNames": "node ./scripts/generateIconNames.js"
+    "generateIconNames": "node ./scripts/generateIconNames.js && prettier --write ./scripts/out/iconNames.ts",
+    "prebuild": "npm run generateIconNames"
   },
   "dependencies": {
     "framer-motion": "^10.16.16",
