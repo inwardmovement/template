@@ -1,7 +1,7 @@
 # To do
 
 - composants
-  - Button accent | danger > Default gris Accent noir Danger rouge
+  - Button default/gray accent/black
   - Piloter espace icon depuis button (gap + padding côté, test tous icons pour préréglage)
 
 # Waiting
