@@ -2,7 +2,7 @@
 
 - cva -D
 - composants
-  - Button default/gray accent/black subtle/hover iconOnly rounded
+  - Button default/gray accent/black subtle/hover iconOnly rounded fab
   - Piloter espace icon depuis button (gap + padding côté, test tous icons pour préréglage)
 
 # Waiting
